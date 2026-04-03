@@ -9,6 +9,24 @@ Se requiere que el usuario pueda moverse por el sitio de manera intuitiva. Para 
     ● Simulá que los enlaces llevan a secciones internas del sitio.
 -->
 
+<!-- Ejercicio práctico #2:
+
+Inserción de imagen y video
+
+Paso a paso:
+
+    1. Descargar y preparar los archivos:
+        ○ Buscá una imagen que represente el logo de tu sitio web.
+        ○ Guardala como logo.png en la misma carpeta que tu HTML.
+        ○ Elegí un video representativo (video.mp4) y descargá también los subtítulos en .vtt si están disponibles (o crealos como subtitulos.vtt).
+    2. Incorporar la imagen en el <header>:
+        ○ Usá la etiqueta <img src="logo.png" alt="Logo de tu sitio web">.
+    3. Insertar el video en el <main>:
+        ○ Creá una <section> para insertar el video.
+        ○ Usá la etiqueta <video> con controls.
+        ○ Incluí los subtítulos usando <track src="subtitulos.vtt" kind="subtitles" srclang="es" label="Español">.
+-->
+
 <!DOCTYPE html>
 <html lang="es">
 
@@ -20,7 +38,7 @@ Se requiere que el usuario pueda moverse por el sitio de manera intuitiva. Para 
 
 <body>
     <header>
-        <h1>Mi Primer Proyecto</h1>
+        <img src="img/logo.png" alt="Logo del sitio web" width="100" height="100">
     </header>
     <nav>
         <!-- Representa sección de navegación con enlaces a otras partes de la página o a diferentes páginas -->
@@ -39,6 +57,13 @@ Se requiere que el usuario pueda moverse por el sitio de manera intuitiva. Para 
         </section>
         <section id="contacto">
             <h2>Contacto</h2>
+        </section>
+        <section>
+            <video controls width="600" height="400">
+                <source src="video/publicidad_farmacia.mp4" type="video/mp4">
+                <track src="video/sub_publicidad_farmacia.vtt" kind="subtitles" srclang="es" label="Español">
+                Tu navegador no soporta video.
+            </video>
         </section>
     </main>
     <footer></footer>
