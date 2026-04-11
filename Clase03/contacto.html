@@ -14,25 +14,97 @@ correctamente.
 ● Documentá en tu README.md cómo configuraste Formspree y por qué es útil.
 -->
 
+<!-- Ejercicio práctico #2:
+
+Crear una tabla de datos de contacto + inspección
+
+Dentro del mismo <main>, agregá una tabla que muestre información ficticia de personas
+que ya enviaron el formulario.
+(Nombre, correo, mensaje corto, estado del mensaje).
+
+Usá etiquetas <table>, <thead>, <tbody>, <tr>, <th>, <td>.
+1. Aplicá una combinación de celdas con colspan o rowspan para representar algo más
+complejo. Por ejemplo, una fila combinada que diga "Mensajes pendientes de
+respuesta".
+2. Luego, con las herramientas de inspección del navegador (F12 o clic derecho →
+"Inspeccionar"), revisá:
+● La estructura real del HTML.
+● Qué pasa si cambiás estilos desde la consola.
+● Cómo se ve el padding o el border de cada celda.
+ -->
+
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Clase 03</title>
-    </head>
-    <body>
-        <form action="https://formspree.io/f/mreonjkr" method="post">
-            <label for="nombre">Nombre</label>
-            <input type="text" id="nombre" name="nombre">
-            <br>
-            <label for="correo">Correo</label>
-            <input type="email" id="correo" name="correo">
-            <br>
-            <label for="mensaje">Mensaje</label>
-            <textarea id="mensaje" name="mensaje"></textarea>
-            <br>
-            <button type="submit">Enviar</button>
-        </form>
-    </body>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clase 03</title>
+</head>
+
+<body>
+    <header></header>
+    <nav>
+        <!-- Representa sección de navegación con enlaces a otras partes de la página o a diferentes páginas -->
+        <ul>
+            <li><a href="#inicio">Incio</a></li>
+            <li><a href="#productos">Productos</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+            <li><a href="#registroDeConsultas">Registro de consultas</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="inicio">
+            <h2>Inicio</h2>
+        </section>
+        <section id="productos">
+            <h2>Productos</h2>
+        </section>
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <form action="https://formspree.io/f/mreonjkr" method="post">
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="nombre">
+                <br>
+                <label for="correo">Correo</label>
+                <input type="email" id="correo" name="correo">
+                <br>
+                <label for="mensaje">Mensaje</label>
+                <textarea id="mensaje" name="mensaje"></textarea>
+                <br>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+        <section id="registroDeConsultas">
+            <table>
+                <caption>Registro de consultas</caption>
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Correo</th>
+                        <th>Estado del mensaje</th>
+                        <th>Mensaje</th>
+                    </tr>
+                <tbody>
+                    <td>Maia</td>
+                    <td>maia@gmail.com</td>
+                    <td>estado prueba</td>
+                    <td>prueba</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">Mensajes pendientes de respuesta</td>
+                        <td>
+                            <ul>
+                                <li>msj1</li>
+                                <li>msj2</li>
+                            </ul>
+                        </td>
+                    </tr>
+                </tbody>
+                </thead>
+            </table>
+        </section>
+    </main>
+</body>
+
 </html>
