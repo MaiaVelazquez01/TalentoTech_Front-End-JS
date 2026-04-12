@@ -14,6 +14,16 @@ derechos reservados.
     ○ Usar al menos un selector de clase y un selector de elemento.
 -->
 
+<!-- Ejercicio práctico #2:
+Modificar la barra de navegación (Navbar)
+
+● Asegurarte que tu HTML tenga una barra de navegación.
+● En styles.css, aplicar estos estilos:
+    ○ Usar list-style: none; para que la lista no tenga viñetas.
+    ○ Quitar el subrayado de los enlaces con text-decoration: none;.
+    ○ Cambiar el color del texto de los enlaces con la propiedad color.
+-->
+
 <!DOCTYPE html>
 <html lang="es">
 
@@ -31,8 +41,23 @@ derechos reservados.
         <h1 class="logo__titulo">FarmaLab</h1>
         <p class="logo__slogan">Comprometidos con tu cuidado</p>
     </header>
+    <nav>
+        <ul>
+            <li><a href="#inicio">Incio</a></li>
+            <li><a href="#productos">Productos</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+         </ul>
+    </nav>
     <main>
-
+        <section id="inicio">
+            <h2>Inicio</h2>
+        </section>
+        <section id="productos">
+            <h2>Productos</h2>
+        </section>
+        <section id="contacto">
+            <h2>Contacto</h2>
+        </section>
     </main>
     <footer>
         <p class="derechos">© 2026 Mi Sitio Web. Todos los derechos reservados.</p>

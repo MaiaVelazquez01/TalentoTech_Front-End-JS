@@ -12,6 +12,24 @@ p {
     font-family: Montserrat;
 }
 
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #325795;
+}
+
+nav {
+    font-family: Montserrat;
+    font-weight: bold;
+}
+
+h2 {
+    padding: 7px;
+}
+
 .logo__titulo {
     color: #325795;
     font-family: "Cinzel";
