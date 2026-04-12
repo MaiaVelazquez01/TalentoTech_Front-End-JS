@@ -1,0 +1,23 @@
+header {
+    background-color:white;
+    padding: 5px;
+}
+
+footer {
+    background-color: #E7E7E7;
+    padding: 7px;
+}
+
+p {
+    font-family: Montserrat;
+}
+
+.logo__titulo {
+    color: #325795;
+    font-family: "Cinzel";
+    margin-bottom: 0px;
+}
+
+.logo__slogan {
+    margin-top: 0px;
+}
