@@ -1,0 +1,17 @@
+.site-header__title {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 30px;
+}
+
+.site-main__description, 
+.site-main__list,
+.site-footer__copyright {
+    font-family: "Poppins", sans-serif;
+    font-size: 18px;
+}
+
+.site-main__subtitle {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+}
