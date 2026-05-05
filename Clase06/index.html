@@ -14,13 +14,30 @@ Cada tarjeta debe tener:
     ● Un botón de “Agregar al carrito” con ícono de Font Awesome o Flaticon.
 -->
 
+<!-- Ejercicio práctico #2:
+Crear distribución de productos con Flexbox
+
+¿Qué tenés que hacer?
+    1. Dentro de tu HTML, modificaremos la sección creada con la clase "productos".
+    2. Dentro de esa sección, ordenaremos a los 3 <article> que representan a los productos 
+        diseñados en el ejercicio anterior.
+    3. En tu archivo CSS, aplicá display: flex al padre para distribuir a los hijos de forma horizontal
+    4. Distribuir los ítems de la barra de navegación
+
+Asegurate de:
+    ● Usar gap para separar las tarjetas
+    ● Usar flex-wrap para que se adapten en pantallas más chicas
+    ● Usar unidades relativas o anchos fijos para los productos según el diseño
+    ● Usar propiedades como justify-content, text-decoration, padding, color, etc.
+-->
+
 <!DOCTYPE html>
 <html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="css/styles.css">
     <title>Clase06</title>
@@ -51,11 +68,13 @@ Cada tarjeta debe tener:
                             <h3>Ibuprofeno 400mg</h3>
                         </div>
                         <div class="product-mid">
-                            <p class="product-mid__description">Alivia el dolor, reduce la inflamación y baja la fiebre</p>
+                            <p class="product-mid__description">Alivia el dolor, reduce la inflamación y baja la fiebre
+                            </p>
                             <span class="product-mid__precio">$3.739</span>
                         </div>
                         <div class="product-bot">
-                            <button class="product-bot__button">Agregar al carrito<i class="fa-solid fa-cart-arrow-down"></i></button>
+                            <button class="product-bot__button">Agregar al carrito<i
+                                    class="fa-solid fa-cart-arrow-down"></i></button>
                         </div>
                     </div>
                 </article>
@@ -82,7 +101,8 @@ Cada tarjeta debe tener:
                             <h3>Aerotina 10mg</h3>
                         </div>
                         <div class="product-mid">
-                            <p class="product-mid__description">Alivia síntomas de alergia como estornudos, picazón y secreción nasal</p>
+                            <p class="product-mid__description">Alivia síntomas de alergia como estornudos, picazón y
+                                secreción nasal</p>
                             <span class="product-mid__precio">$4.015</span>
                         </div>
                         <div class="product-bot">
