@@ -1,0 +1,102 @@
+<!-- Ejercicio práctico #1:
+Crear tarjetas de producto con estilos completos
+
+¿Qué tenés que hacer?
+Dentro de tu page servicios/productos en una sección dentro del <main> (<section
+class="productos">), creá al menos 3 tarjetas de producto pueden utilizar etiquetas
+como <article>.
+    
+Cada tarjeta debe tener:
+    ● Imagen del producto
+    ● Nombre del producto (con fuente externa)
+    ● Descripción breve
+    ● Precio destacado
+    ● Un botón de “Agregar al carrito” con ícono de Font Awesome o Flaticon.
+-->
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Clase06</title>
+</head>
+
+<body>
+    <header class="marca-logo">
+        <img class="marca-logo__img" src="img/logo.png" alt="logo FarmaLab">
+        <h1 class="marca-logo__title">FarmaLab</h1>
+    </header>
+    <nav class="navbar">
+        <ul class="navbar-list">
+            <li><a href="#home" class="navbar-list__link">Inicio</a></li>
+            <li><a href="#products" class="navbar-list__link">Productos</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="home" class="home">
+            <img class="home-banner" src="img/banner.png" alt="banner">
+        </section>
+        <section id="products">
+            <h2 class="products-title">Productos</h2>
+            <div class="products-container">
+                <article class="product">
+                    <img src="img/ibuprofeno.png" class="product-img" alt="Ibuprofeno">
+                    <div class="product-info">
+                        <div class="product-top">
+                            <h3>Ibuprofeno 400mg</h3>
+                        </div>
+                        <div class="product-mid">
+                            <p class="product-mid__description">Alivia el dolor, reduce la inflamación y baja la fiebre</p>
+                            <span class="product-mid__precio">$3.739</span>
+                        </div>
+                        <div class="product-bot">
+                            <button class="product-bot__button">Agregar al carrito<i class="fa-solid fa-cart-arrow-down"></i></button>
+                        </div>
+                    </div>
+                </article>
+                <article class="product">
+                    <img src="img/buscapina.png" class="product-img" alt="Buscapina">
+                    <div class="product-info">
+                        <div class="product-top">
+                            <h3>Buscapina 10u</h3>
+                        </div>
+                        <div class="product-mid">
+                            <p class="product-mid__description">Alivia cólicos y espasmos abdominales</p>
+                            <span class="product-mid__precio">$6.231</span>
+                        </div>
+                        <div class="product-bot">
+                            <button class="product-bot__button">Agregar al carrito<i
+                                    class="fa-solid fa-cart-arrow-down"></i></button>
+                        </div>
+                    </div>
+                </article>
+                <article class="product">
+                    <img src="img/aerotina.png" class="product-img" alt="Aerotina">
+                    <div class="product-info">
+                        <div class="product-top">
+                            <h3>Aerotina 10mg</h3>
+                        </div>
+                        <div class="product-mid">
+                            <p class="product-mid__description">Alivia síntomas de alergia como estornudos, picazón y secreción nasal</p>
+                            <span class="product-mid__precio">$4.015</span>
+                        </div>
+                        <div class="product-bot">
+                            <button class="product-bot__button">Agregar al carrito<i
+                                    class="fa-solid fa-cart-arrow-down"></i></button>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+    <footer class="site-footer">
+        <p class="site-footer__copyright">© 2026 FarmaLab. Todos los derechos reservados.</p>
+    </footer>
+</body>
+
+</html>
