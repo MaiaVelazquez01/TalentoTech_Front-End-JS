@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 20px;
+    background-color: #f1f2fa;
+}
+
+.brand-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+}
+
+.brand-logo__img {
+    width: 40px;
+    height: 40px;
+}
+
+.brand-logo__title {
+    font-size: 1.6rem;
+    font-family: "Cinzel", sans-serif;
+    color: #166489;
+    padding-left: 5px;
+    padding-top: 5px;
+    margin: 0px;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 1.8rem;
+    margin-bottom: 10px;
+    padding: 0px;
+}
+
+.navbar-list {
+    list-style: none;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    display: flex;
+    margin: 0px;
+    padding-left: 40px;
+}
+
+.navbar-list__link {
+    text-decoration: none;
+    color: #6E6E6E;
+    padding-right: 30px;
+    font-size: 0.7rem;
+}
+
+.home {
+    display: flex;
+    justify-content: center;
+    padding: 0px 20px;
+    height: 72vh;
+    margin-bottom: 2rem;
+}
+
+.home-banner {
+    margin: 0px;
+    border-radius: 12px;
+    width: 98%;
+}
+
+.reviews-title {
+    padding-left: 40px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.2rem;
+}
+
+.reviews-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px 30px;
+}
+
+.review-card {
+    display: flex;
+    background-color: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 2px 8px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.review-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0px 6px 14px rgba(0,0,0,0.12);
+}
+
+.review-top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.review-top i {
+    color: rgba(28, 97, 129, 0.616);
+    font-size: 20px;
+}
+
+.review-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    padding: 3px;
+    border: 2px solid transparent;
+    background: linear-gradient(white, white) padding-box,
+                linear-gradient(135deg, #166489, #5EC9F5) border-box;
+    display: flex;
+    align-items: center;
+}
+
+.review-info {
+    display: flex;
+    flex-direction: column;
+    font-family: "Roboto", sans-serif;
+    gap: 6px;
+    padding: 3px 5px 3px 15px;
+}
+
+.review-info hr {
+    width: 8%;
+    border-top: 2px solid #5EC9F5;
+}
+
+.review-name {
+    font-size: 0.78rem;
+    color: #166489;
+}
+
+.review-stars {
+    color: #166489;
+    font-size: 0.5rem;
+}
+
+.review-txt {
+    font-size: 0.6rem;
+    color: #4d4b4b;
+}
+
+.site-footer {
+    padding-left: 40px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.7rem;
+    margin: 14px 0px;
+}
