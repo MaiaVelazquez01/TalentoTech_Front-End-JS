@@ -22,13 +22,31 @@ Sección "Reseñas"
         ● Sumá una transición con la propiedad transition para que el movimiento no sea brusco.
 -->
 
+<!-- Ejercicio práctico #2:
+Aplicar media querys 
+    1. Crear una media query para pantallas menores a 768px
+        ● Dentro de tu archivo CSS, agregá una regla @media que se aplique a max-width: 768px.
+    2. Adaptar la sección .reseñas
+        ● Dentro de la media query, indicá que las tarjetas se dispongan en una sola columna.
+        ● Esto se hace modificando la propiedad de grid-template-columns.
+    3. Adaptar el formulario de “Contacto”
+        ● Revisá tu HTML y asegurate de tener una estructura semántica clara.
+        ● Dentro del formulario, agregá campos para: Nombre, Correo, Mensaje.
+    4. Estilos dentro de la media query
+        ● Asegurate de que los input y textarea ocupen el 100% del ancho disponible.
+        ● Sumá margin-bottom entre los campos para que no queden pegados.
+        ● Ajustá el padding general del formulario para que se vea cómodo en un celular.
+-->
+
 <!DOCTYPE html>
 <html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="css/styles.css">
     <title>Clase07</title>
@@ -43,6 +61,7 @@ Sección "Reseñas"
         <ul class="navbar-list">
             <li><a href="#home" class="navbar-list__link">Inicio</a></li>
             <li><a href="#reviews" class="navbar-list__link">Reseñas</a></li>
+            <li><a href="#contact" class="navbar-list__link">Contacto</a></li>
         </ul>
     </nav>
     <main>
@@ -61,9 +80,12 @@ Sección "Reseñas"
                         </div>
                         <hr>
                         <div class="review-stars">
-                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i>
                         </div>
-                        <p class="review-txt">Excelente atención y productos de calidad. Siempre encuentro lo que necesito y los envíos son súper rápidos.</p>
+                        <p class="review-txt">Excelente atención y productos de calidad. Siempre encuentro lo que
+                            necesito y los envíos son súper rápidos.</p>
                     </div>
                 </section>
                 <section class="review-card">
@@ -75,9 +97,12 @@ Sección "Reseñas"
                         </div>
                         <hr>
                         <div class="review-stars">
-                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i>
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-regular fa-star"></i>
                         </div>
-                        <p class="review-txt">La atención fue excelente y encontré lo que necesitaba aunque la variedad de algunos productos podría ser un poco más amplia.</p>
+                        <p class="review-txt">La atención fue excelente y encontré lo que necesitaba aunque la variedad
+                            de algunos productos podría ser un poco más amplia.</p>
                     </div>
                 </section>
                 <section class="review-card">
@@ -89,12 +114,49 @@ Sección "Reseñas"
                         </div>
                         <hr>
                         <div class="review-stars">
-                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i>
                         </div>
-                        <p class="review-txt">Muy buena experiencia de compra. La atención fue rápida y amable. Los productos llegaron en perfecto estado. Sin dudas volvería a comprar.</p>
+                        <p class="review-txt">Muy buena experiencia de compra. La atención fue rápida y amable. Los
+                            productos llegaron en perfecto estado. Sin dudas volvería a comprar.</p>
                     </div>
                 </section>
             </div>
+        </section>
+        <section id="contact" class="contact">
+            <h2 class="contact-title">Contacto</h2>
+            <p class="contact-txt">Estamos aquí para ayudarte. Envíanos tu mensaje y te responderemos a la brevedad.</p>
+            <form action="https://formspree.io/f/mreonjkr" method="post" class="contact-form" autocomplete="off">
+                <div class="contact-form__row">
+                    <div class="contact-form__group">
+                        <label for="nombre">Nombre</label>
+                        <div class="contact-form__field">
+                            <i class="fa-regular fa-user"></i><input type="text" id="nombre" name="nombre"
+                                placeholder="Tu nombre">
+                        </div>
+                    </div>
+                    <div class="contact-form__group">
+                        <label for="correo">Correo</label>
+                        <div class="contact-form__field">
+                            <i class="fa-regular fa-envelope"></i><input type="email" id="correo" name="correo"
+                                placeholder="tu@correo.com">
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="contact-form__group">
+                    <label for="mensaje">Mensaje</label>
+                    <div class="contact-form__field-textarea">
+                        <i class="fa-regular fa-comment"></i><textarea id="mensaje" name="mensaje"
+                            placeholder="Escribe tu mensaje aquí..."></textarea>
+                    </div>
+                </div>
+                <br>
+                <button type="submit" class="contact-form__button">
+                    <i class="fa-regular fa-paper-plane"></i>ENVIAR
+                    <button>
+            </form>
         </section>
     </main>
     <footer class="site-footer">

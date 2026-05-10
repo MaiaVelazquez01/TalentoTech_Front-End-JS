@@ -79,7 +79,8 @@ html {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
-    padding: 20px 30px;
+    padding: 20px 30px 0px 30px;
+    margin-bottom: 2rem;
 }
 
 .review-card {
@@ -87,13 +88,13 @@ html {
     background-color: white;
     padding: 20px;
     border-radius: 12px;
-    box-shadow: 0px 2px 8px rgba(0,0,0,0.08);
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.08);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .review-card:hover {
     transform: translateY(-6px);
-    box-shadow: 0px 6px 14px rgba(0,0,0,0.12);
+    box-shadow: 0px 6px 14px rgba(0, 0, 0, 0.12);
 }
 
 .review-top {
@@ -114,7 +115,7 @@ html {
     padding: 3px;
     border: 2px solid transparent;
     background: linear-gradient(white, white) padding-box,
-                linear-gradient(135deg, #166489, #5EC9F5) border-box;
+        linear-gradient(135deg, #166489, #5EC9F5) border-box;
     display: flex;
     align-items: center;
 }
@@ -147,9 +148,140 @@ html {
     color: #4d4b4b;
 }
 
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.contact-title {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.2rem;
+    color: #166489;
+    text-align: center;
+}
+
+.contact-txt {
+    font-family: "Roboto", sans-serif;
+    font-size: 0.68rem;
+    color: #4d4b4b;
+    text-align: center;
+    padding: 10px 0px 20px;
+}
+
+.contact-form {
+    background-color: white;
+    border-radius: 12px;
+    width: 60%;
+    padding: 1.5rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-form__row {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    width: 100%;
+}
+
+.contact-form__group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    flex: 1;
+    width: 100%
+}
+
+.contact-form__group label {
+    color: #166489;
+    font-family: "Roboto", sans-serif;
+    font-size: 0.68rem;
+    font-weight: bold;
+}
+
+.contact-form__field,
+.contact-form__field-textarea {
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+    border: 1px solid #c2c1c1;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.contact-form__field-textarea {
+    align-items: flex-start;
+    height: 5rem;
+}
+
+.contact-form__field i,
+.contact-form__field-textarea i {
+    color: #1898CC;
+    font-size: 0.7rem;
+}
+
+.contact-form__field input,
+.contact-form__field-textarea textarea {
+    border: none;
+    font-family: "Roboto", sans-serif;
+    font-size: 0.68rem;
+    color: #4d4b4b;
+    width: 100%;
+}
+
+.contact-form__field-textarea textarea {
+    height: 100%;
+    border: none;
+    resize: none;
+}
+
+.contact-form__field input:focus,
+.contact-form__field-textarea textarea:focus {
+    outline: none;
+}
+
+.contact-form__field:focus-within,
+.contact-form__field-textarea:focus-within {
+    border: 1px solid #1898CC;
+}
+
+.contact-form__button {
+    background-color: #1898CC;
+    font-size: 0.7rem;
+    color: white;
+    border-radius: 5px;
+    padding: 0.5rem 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.contact-form__button:hover {
+    transform: translateY(-5px);
+}
+
 .site-footer {
     padding-left: 40px;
     font-family: "Montserrat", sans-serif;
     font-size: 0.7rem;
     margin: 14px 0px;
+}
+
+@media (max-width: 768px) {
+
+    .reviews-container {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-form {
+        width: 80%;
+    }
+
 }
