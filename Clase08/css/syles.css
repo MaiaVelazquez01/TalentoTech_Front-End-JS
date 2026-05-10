@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 20px;
+    background-color: #f1f2fa;
+}
+
+.brand-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+}
+
+.brand-logo__img {
+    width: 40px;
+    height: 40px;
+}
+
+.brand-logo__title {
+    font-size: 1.6rem;
+    font-family: "Cinzel", sans-serif;
+    color: #166489;
+    padding-left: 5px;
+    padding-top: 5px;
+    margin: 0px;
+}
