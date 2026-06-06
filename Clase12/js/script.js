@@ -24,8 +24,25 @@ window.addEventListener("load", () => {
         let precio = document.createElement("p");
         precio.textContent = `$${productos[i].price}`;
 
+        let boton = document.createElement("button");
+        boton.textContent = "Ver descripción";
+        boton.addEventListener("click", function () {
+            let descripcion = tarjeta.querySelector(".descripcion");
+            if (!descripcion) {
+                descripcion = document.createElement("p");
+                descripcion.className = "descripcion";
+                descripcion.textContent = productos[i].description;
+                tarjeta.appendChild(descripcion);
+                boton.textContent = "Ocultar descripción";
+            } else {
+                descripcion.remove();
+                boton.textContent = "Ver descripción";
+            }
+        });
+
         tarjeta.appendChild(nombre);
         tarjeta.appendChild(precio);
+        tarjeta.appendChild(boton);
 
         contenedor.appendChild(tarjeta);
     }
