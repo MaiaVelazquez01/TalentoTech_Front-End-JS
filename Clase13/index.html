@@ -19,6 +19,22 @@ Pasos a seguir:
             ○ el color de fondo elegido.
 -->
 
+<!-- Ejercicio práctico #2:
+Carrito de compras con conteo de productos
+
+Pasos a seguir:
+    1. Armar el catálogo
+        a. Creá un listado de productos en el HTML (pueden utilizar los que ya armaron anteriormente “Agregar al carrito”).
+    2. Configurar el contador
+        a. Mostrá un contador (por ejemplo, en la esquina superior) que indique cuántos productos hay en el carrito.
+    3. Programar el agregado
+        a. Cuando el usuario haga clic en “Agregar al carrito”, aumentá la cantidad de productos.
+        b. Guardá el valor actualizado en LocalStorage.
+    4. Recuperar los datos al cargar
+        a. Cada vez que se recargue la página, tomá el número guardado en LocalStorage.
+    5. Mostralo en el contador del carrito.
+-->
+
 <!DOCTYPE html>
 <html lang="es">
 
@@ -32,17 +48,43 @@ Pasos a seguir:
     <h1>Guardar preferencias de usuario</h1>
     <form id="form">
         <label for="nombre">Nombre:</label><br>
-        <input type="text" id="nombre"><br><br>
+        <input type="text" id="nombre" required><br><br>
         <label for="color">Elegí un color:</label>
-        <select id="color">
+        <select id="color" required>
             <option value="red" style="background-color: red;">Rojo</option>
-            <option value="blue" style="background-color: blue; color: white;">Azul</option>
-            <option value="green" style="background-color: green; color: white;">Verde</option>
+            <option value="blue" style="background-color: blue;">Azul</option>
+            <option value="white" style="background-color: white;">Blanco</option>
             <option value="yellow" style="background-color: yellow;">Amarillo</option>
         </select><br><br>
         <button type="submit" id="bt-enviar">Enviar</button>
     </form>
     <p id="saludo"></p>
+
+    <h1>Tienda Online</h1>
+    <div id="productos">
+        <h2>Productos Disponibles</h2>
+        <ul>
+            <li>
+                Producto 1 - $100
+                <button class="agregar-carrito" data-id="1" data-nombre="Producto 1" data-precio="100">Agregar al Carrito</button>
+            </li>
+            <li>
+                Producto 2 - $150
+                <button class="agregar-carrito" data-id="2" data-nombre="Producto 2" data-precio="150">Agregar al Carrito</button>
+            </li>
+            <li>
+                Producto 3 - $200
+                <button class="agregar-carrito" data-id="3" data-nombre="Producto 3" data-precio="200">Agregar al Carrito</button>
+            </li>
+        </ul>
+    </div>
+
+    <div id="carrito">
+        <h2>Carrito de Compras</h2>
+        <p id="contador"></p>
+        <ul id="lista-carrito"></ul>
+    </div>
+
     <script src="js/script.js"></script>
 </body>
 
