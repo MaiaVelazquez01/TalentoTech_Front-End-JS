@@ -1,0 +1,31 @@
+<!-- Ejercicio práctico #1:
+Consumir una API REST con fetch
+
+Pasos a seguir:
+    1. Elegí una API pública para probar, por ejemplo: https://fakestoreapi.com/products
+    2. En tu archivo HTML, creá un contenedor donde se mostrarán los productos, por ejemplo: <div id="productos-container"></div>
+    3. En un archivo JavaScript separado o dentro de un <script>:
+        ● Usá fetch() para obtener los productos desde la API.
+        ● Convertí la respuesta a JSON para poder trabajar con los datos.
+        ● Recorré la lista de productos con un bucle .forEach() y generá las tarjetas para mostrarlos en el contenedor del HTML.
+        ● Agregá manejo de errores con .catch(), mostrando un mensaje claro si algo falla (alert o texto en la página).
+    4. Probá recargar la página para verificar que los productos se carguen correctamente.
+-->
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Clase14</title>
+</head>
+
+<body>
+    <h1>Tienda online</h1>
+    <div class="contenedor-productos"></div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
