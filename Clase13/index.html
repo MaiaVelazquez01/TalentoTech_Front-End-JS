@@ -1,0 +1,49 @@
+<!-- Ejercicio práctico #1:
+Guardar preferencias de usuario
+
+Pasos a seguir:
+    1. Crear el formulario
+        ● Armá en tu HTML un formulario con dos campos:
+            ○ un campo para el nombre (input).
+            ○ un selector (select) con diferentes colores de fondo.
+        ● Sumale un botón de enviar para guardar las preferencias.
+    2. Capturar los datos
+        ● En JavaScript, usá un evento submit para capturar el nombre y el color cuando el usuario envía el formulario.
+        ● Recordá usar preventDefault() para evitar que el formulario recargue la página.
+    3. Guardar en LocalStorage
+        ● Usá localStorage.setItem() para guardar el nombre y el color.
+    4. Recuperar y aplicar preferencias
+        ● Cada vez que la página se cargue, verificá si hay datos guardados en LocalStorage.
+        ● Si existen, aplicá automáticamente:
+            ○ el saludo con el nombre del usuario.
+            ○ el color de fondo elegido.
+-->
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clase13</title>
+</head>
+
+<body>
+    <h1>Guardar preferencias de usuario</h1>
+    <form id="form">
+        <label for="nombre">Nombre:</label><br>
+        <input type="text" id="nombre"><br><br>
+        <label for="color">Elegí un color:</label>
+        <select id="color">
+            <option value="red" style="background-color: red;">Rojo</option>
+            <option value="blue" style="background-color: blue; color: white;">Azul</option>
+            <option value="green" style="background-color: green; color: white;">Verde</option>
+            <option value="yellow" style="background-color: yellow;">Amarillo</option>
+        </select><br><br>
+        <button type="submit" id="bt-enviar">Enviar</button>
+    </form>
+    <p id="saludo"></p>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
