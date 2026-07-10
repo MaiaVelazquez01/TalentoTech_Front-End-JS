@@ -12,6 +12,22 @@ Pasos a seguir:
     4. Probá recargar la página para verificar que los productos se carguen correctamente.
 -->
 
+<!-- Ejercicio práctico #2:
+Carrito dinámico con productos de la API
+
+Pasos a seguir:
+    1. Partí del ejercicio anterior donde ya tienes los productos cargados con fetch.
+    2. Añadí un botón “Añadir al carrito” en cada tarjeta de producto.
+    3. Implementá funciones para:
+        ● Recuperar el carrito guardado en localStorage o crear uno vacío si no existe.
+        ● Añadir productos nuevos al carrito (podés guardar solo el ID o el objeto completo).
+        ● Guardar el carrito actualizado en localStorage.
+        ● Mostrar la cantidad total de productos en el carrito en un elemento visible de la página (por ejemplo, un <div id="contador-carrito"></div>).
+        ● Actualizar ese contador cada vez que se agregue un producto.
+        ● Al cargar la página, inicializar el contador leyendo el carrito guardado en localStorage.
+    4. Confirmá cada agregado al carrito con un mensaje breve (por ejemplo un alert()).
+-->
+
 <!DOCTYPE html>
 <html lang="es">
 
@@ -25,6 +41,13 @@ Pasos a seguir:
 <body>
     <h1>Tienda online</h1>
     <div class="contenedor-productos"></div>
+
+    <div id="carrito">
+        <h2>Listado de Compras</h2>
+        <p id="contador"></p>
+        <ul id="lista-carrito"></ul>
+    </div>
+
     <script src="js/script.js"></script>
 </body>
 
